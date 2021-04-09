@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="foo()">Click</button>
+    <p id="demo"></p>
+
+    <script>
+        let jobs=[
+            {id: 1, status: true},
+            {id: 2, status: false}
+    ];
+        function foo(){
+            document.getElementById('demo').innerHTML=jobs.filter(function(job){ return job.status })
+            console.log()
+        }
+    </script>
+</body>
+</html>
